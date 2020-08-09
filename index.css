@@ -1,5 +1,7 @@
-#tit{
+body{
 	font-family:'Envy Code R';
+}
+#tit{
 	color:rgb(74,246,38);
 	text-align:center;
 }
