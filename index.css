@@ -1,5 +1,5 @@
 #tit{
-	font-family:courier;
+	font-family:Envy Code R;
 	color:rgb(74,246,38);
 	text-align:center;
 }
@@ -17,4 +17,13 @@ a{
 #container{
 	margin:0;
 	width:100%;
+}
+@font-face {
+    font-family: 'Envy Code R';
+    src: url('EnvyCodeR.woff2') format('woff2'),
+        url('EnvyCodeR.woff') format('woff'),
+        url('EnvyCodeR.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
