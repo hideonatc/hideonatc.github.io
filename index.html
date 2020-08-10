@@ -30,14 +30,14 @@
 		</div>
 	</div>
 </body>
-<script language="JavaScript"> 
-VIH_BackColor = "palegreen"; 
-VIH_ForeColor = "navy"; 
-VIH_FontPix = "16"; 
-VIH_DisplayFormat = "You are visiting from:
-IP Address: %%IP%%
-Host: %%HOST%%"; 
-VIH_DisplayOnPage = "yes"; 
-</script> 
-<script language="JavaScript" src="http://www.hashemian.com/js/visitorIP.js.php"></script>
+<script type="text/javascript"
+        src="http://l2.io/ip.js">
+    alert("test ip");
+        $(document).ready(function () {
+            $.getJSON("http://smart-ip.net/geoip-json?callback=?",
+            function (json) {
+                alert(json.ip);
+            });
+        });
+</script>
 </html>
