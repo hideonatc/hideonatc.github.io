@@ -30,10 +30,11 @@
 			</a>
 		</div>
 	</div>
+	<h4 id="tit">Your Information</h4><br>
 </body>
 <script>
-    $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
-          alert(data)
+    $.get('https://www.cloudflare.com/cdn-cgi/trace', function(ip) {
+          alert(ip)
     })
-    </script>
+</script>
 </html>
