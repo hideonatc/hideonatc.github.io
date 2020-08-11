@@ -3,6 +3,7 @@
 <head>
 	<link rel="stylesheet" href="index.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<title>hideonatc.github.io</title>
 </head>
 <body style="background-color:black;">
@@ -30,14 +31,9 @@
 		</div>
 	</div>
 </body>
-<script type="text/javascript"
-        src="http://l2.io/ip.js">
-    alert("test ip");
-        $(document).ready(function () {
-            $.getJSON("http://smart-ip.net/geoip-json?callback=?",
-            function (json) {
-                alert(json.ip);
-            });
-        });
-</script>
+<script>
+    $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
+          alert(data)
+    })
+    </script>
 </html>
