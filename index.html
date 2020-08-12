@@ -31,20 +31,11 @@
 		</div>
 	</div>
 	<h4 id="tit">Your Information</h4><br>
+	<a href="info.html" target="_blank">Click here for your internet information</a>
 	<script>
     $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
     	alert(data);
     })
-	</script>
-	<script>
-		$.ajax({
-			type: "post",
-			dt: {
-			"method": "write",
-			"data":"192.168.0.1"
-			},
-		url: "https://script.google.com/macros/s/AKfycbzvYY_nEei79_UfUm_rXzLoVBRcUaRjZ_IvmNRiOKNxN1smm-cP/exec"
-		});
 	</script>
 </body>
 </html>
