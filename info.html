@@ -2,15 +2,17 @@
 <html>
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<title>Info</title>
-</head>
-<body style="background-color:blue">
-	<p>
-		<script>
-	    $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
+	<script>
+		$.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
 	    	document.write(data);
 	    })
-		</script>
-	</p>
+		function print_info(){
+			document.getElementById("info").innerHTML=data;
+		}
+	</script>
+	<title>Info</title>
+</head>
+<body style="background-color:blue" onload="print_info()">
+	<h2><span id="info"></span></h2>
 </body>
 </html>
