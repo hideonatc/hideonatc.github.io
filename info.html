@@ -6,8 +6,8 @@
 		function print_info(){
 			$.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
 	    	alert(data);
+	    	document.getElementById("info").innerHTML=data;
 	  		})
-			document.getElementById("info").innerHTML=data;
 		}
 	</script>
 	<title>Info</title>
