@@ -2,11 +2,11 @@
 <html>
 <head>
 	<link rel="stylesheet" href="index.css">
+	<script src="info.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
 		function print_info(){
 			$.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
-	    	alert(data);
 	    	document.getElementById("info").innerHTML=data;
 	  		})
 		}
@@ -15,5 +15,9 @@
 </head>
 <body style="background-color:black" onload="print_info()">
 	<pre style="color:green; white-space:pre-wrap; font-size:3vw"><span id="info"></span></pre>
+		第一欄：<input id="a1"><br/> 
+  		第二欄：<input id="a2"><br/>
+  		第三欄：<input id="a3"><br/>
+  <button id="b">儲存</button>
 </body>
 </html>
