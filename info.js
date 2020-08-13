@@ -1,3 +1,5 @@
+const cors = 'https://cors-anywhere.herokuapp.com/';
+const url = 'https://script.google.com/macros/s/AKfycbzvYY_nEei79_UfUm_rXzLoVBRcUaRjZ_IvmNRiOKNxN1smm-cP/exec';
 $(function() {
   var $a1 = $('#a1'),
     $a2 = $('#a2'),
@@ -12,6 +14,6 @@ $(function() {
         sheetTag: 'ipinfo'
     };
     console.log(a);
-    $.get('https://script.google.com/macros/s/AKfycbzvYY_nEei79_UfUm_rXzLoVBRcUaRjZ_IvmNRiOKNxN1smm-cP/exec', a);
+    $.get('${cors}${url}', a);
   });
 });
